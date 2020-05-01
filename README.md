@@ -25,7 +25,7 @@ All your extension's development code must be placed in `src` folder, including 
 
 The boilerplate is already prepared to have a popup, a options page and a background page. You can easily customize this.
 
-Each page has its own [assets package defined](https://github.com/samuelsimoes/chrome-extension-webpack-boilerplate/blob/master/webpack.config.js#L16-L20). So, to code on popup you must start your code on `src/js/popup.js`, for example.
+Each page has its own [assets package defined](https://github.com/samuelsimoes/chrome-extension-webpack-boilerplate/blob/master/webpack.config.js#L16-L20). So, to code on popup you must start your code on `src/js/popup.jsx`, for example.
 
 You must use the [ES6 modules](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import) to a better code organization. The boilerplate is already prepared to that and [here you have a little example](https://github.com/samuelsimoes/chrome-extension-webpack-boilerplate/blob/master/src/js/popup.js#L2-L4).
 
@@ -111,3 +111,15 @@ ApiCall({ key: secrets.key });
 
 -------------
 Samuel Simões ~ [@samuelsimoes](https://twitter.com/samuelsimoes) ~ [Blog](http://blog.samuelsimoes.com/)
+
+
+#
+
+```bash
+rsvg-convert /Users/iain/Projects/grafiti/facts_machine/app/assets/images/_x40_grafitilogo.svg -w 34 -h 34 src/img/icon-34.png
+rsvg-convert /Users/iain/Projects/grafiti/facts_machine/app/assets/images/_x40_grafitilogo.svg -w 34 -h 34 -o src/img/icon-34.png
+rsvg-convert /Users/iain/Projects/grafiti/facts_machine/app/assets/images/_x40_grafitilogo.svg -w 128 -h 128 -o src/img/icon-128.png
+
+rsvg-convert /Users/iain/Projects/grafiti/facts_machine/app/assets/images/GrafitiLogo.svg  -w 34 -h 34 -o src/img/icon-light-34.png
+rsvg-convert /Users/iain/Projects/grafiti/facts_machine/app/assets/images/GrafitiLogo.svg  -w 128 -h 128 -o src/img/icon-light-128.png
+```

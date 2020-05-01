@@ -1,0 +1,69 @@
+:root {
+    --grafitiHighlightColor: #E6B86D;
+    background-color: #fafafe;
+    color: var(--grafitiHighlightColor);
+    font-family: 'Avenir Next', sans-serif;
+}
+
+.app-container {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+
+}
+.grafiti-popup {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+
+& > button {
+    & > * {
+          margin-top: 5px;
+          color: var(--grafitiHighlightColor);
+    margin-block-end: 0;
+    font-weight: 500;
+      }
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+  }
+}
+
+.sent, .failed {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    & > * {
+        text-overflow: ellipsis;
+        overflow: hidden;
+        padding-left: 1rem;
+        text-indent: -0.7rem;
+        font-size: 0.5rem;
+        line-height: 0.9rem;
+        max-width: calc(100% - 2em);
+        display: inline-block;
+        margin: 0;
+    }
+}
+
+.failed {
+    color: red;
+    font-weight: bold;
+}
+
+.failed:before {
+    font-size: 0.9rem;
+    content: '❌';
+}
+
+.sent:before {
+    font-size: 0.9rem;
+    content: '✔️';
+}
